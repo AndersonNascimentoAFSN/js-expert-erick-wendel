@@ -1,0 +1,23 @@
+[
+  {
+    "id": "df1ef496-4479-473b-827c-97e327369b11",
+    "name": "Beetle",
+    "releaseYear": 2024,
+    "available": true,
+    "gasAvailable": true
+  },
+  {
+    "id": "72b759ed-66c3-414b-b471-512e56fd38cf",
+    "name": "Golf",
+    "releaseYear": 2023,
+    "available": true,
+    "gasAvailable": true
+  },
+  {
+    "id": "a79d7e16-b808-42ed-a490-e749f0f5ae96",
+    "name": "Taurus",
+    "releaseYear": 2023,
+    "available": true,
+    "gasAvailable": true
+  }
+]
