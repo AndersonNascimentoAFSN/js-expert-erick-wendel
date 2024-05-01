@@ -1,4 +1,4 @@
-'strict'
+'use strict'
 
 const { deepStrictEqual } = require('assert')
 
