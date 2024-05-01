@@ -2,9 +2,9 @@ const { faker } = require('@faker-js/faker')
 const { join } = require('path')
 const { writeFile } = require('fs/promises')
 
-const Car = require('./../src/entities/car')
-const CarCategory = require('./../src/entities/carCategory')
-const Customer = require('./../src/entities/customer')
+const Car = require('../src/entities/car')
+const CarCategory = require('../src/entities/carCategory')
+const Customer = require('../src/entities/customer')
 
 const seederBaseFolder = join(__dirname, '../', "database")
 const ITEMS_AMOUNT = 2
