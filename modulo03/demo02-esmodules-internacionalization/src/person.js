@@ -44,4 +44,19 @@ export default class Person {
       value: moneyFormat.format(kmTraveled * 0.5)
     }
   }
+
+  static generateInstanceFromString(text) {
+    const EMPTY_SPACE = ' '
+    const [id, vehicles, kmTraveled, from, to] = text.split(EMPTY_SPACE)
+
+    const person = new Person({
+      id,
+      kmTraveled,
+      from,
+      to,
+      vehicles: vehicles.split(','), // Transforma a string em um array
+    })
+
+    return person
+  }
 }

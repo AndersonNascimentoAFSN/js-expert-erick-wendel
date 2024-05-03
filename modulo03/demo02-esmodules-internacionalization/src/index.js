@@ -1,29 +1,29 @@
-import DraftLog from 'draftlog'
-import chalk from 'chalk'
-import chalkTable from 'chalk-table'
-import readline from 'readline'
-
 import database from './../database.json' assert { type: 'json' }
 import Person from './person.js'
+import TerminalController from './terminalController.js'
 
-DraftLog(console).addLineListener(process.stdin)
 const DEFAULT_LANGUAGE = 'pt-BR'
-const options = {
-  leftPad: 2,
-  columns: [
-    { field: 'id', name: chalk.cyan('ID') },
-    { field: 'vehicles', name: chalk.magenta('Vehicles') },
-    { field: 'kmTraveled', name: chalk.magenta('KM Traveled') },
-    { field: 'from', name: chalk.magenta('From') },
-    { field: 'to', name: chalk.magenta('To') }
-  ]
+const STOP_TERM = ':q'
+
+const terminalController = new TerminalController()
+terminalController.inicializeTerminal(database, DEFAULT_LANGUAGE)
+
+async function mainLoop() {
+  try {
+    const answer = await terminalController.question('what??\n')
+    if (answer === STOP_TERM) {
+      terminalController.terminal.close()
+      console.log('Process finished!')
+      return
+    }
+    const person = Person.generateInstanceFromString(answer)
+    console.log(person.formatted('BRL', DEFAULT_LANGUAGE))
+    
+    return mainLoop()
+  } catch (error) {
+    console.error('DEU RUIM**', error)
+    return mainLoop()
+  }
 }
 
-// const table = chalkTable(options, database)
-const table = chalkTable(options, database.map(item => new Person(item).formatted('BRL', DEFAULT_LANGUAGE)))
-const print = console.draft(table)
-
-const terminal = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
-})
+await mainLoop()
