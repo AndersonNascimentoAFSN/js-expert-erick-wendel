@@ -2,6 +2,8 @@ import database from './../database.json' assert { type: 'json' }
 import Person from './person.js'
 import TerminalController from './terminalController.js'
 
+console.log('database', database)
+
 const DEFAULT_LANGUAGE = 'pt-BR'
 const STOP_TERM = ':q'
 
@@ -17,8 +19,13 @@ async function mainLoop() {
       return
     }
     const person = Person.generateInstanceFromString(answer)
-    console.log(person.formatted('BRL', DEFAULT_LANGUAGE))
+
+    terminalController.updateTable(person.formatted('BRL', DEFAULT_LANGUAGE))
     
+    terminalController.saveTable(person)
+
+    // await save(person)
+
     return mainLoop()
   } catch (error) {
     console.error('DEU RUIM**', error)

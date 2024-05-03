@@ -3,11 +3,13 @@ import chalk from 'chalk'
 import chalkTable from 'chalk-table'
 import readline from 'readline'
 import Person from './person.js'
+import { PersonService } from './personService.js'
 
 export default class TerminalController {
   constructor() {
     this.print = {}
     this.data = {}
+    this.personService = new PersonService()
   }
 
   inicializeTerminal(database, language) {
@@ -24,6 +26,15 @@ export default class TerminalController {
     const table = chalkTable(this.#getTableOptions(), data)
     this.print = console.draft(table)
     this.data = data
+  }
+
+  updateTable(item) {
+    this.data.push(item)
+    this.print(chalkTable(this.#getTableOptions(), this.data))
+  }
+
+  saveTable(person) {
+    this.personService.addPerson(person)
   }
 
   question(msg = '') {
