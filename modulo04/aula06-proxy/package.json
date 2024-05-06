@@ -1,0 +1,12 @@
+{
+  "name": "aula06-proxy",
+  "version": "1.0.0",
+  "main": "proxy.js",
+  "scripts": {
+    "dev": "nodemon proxy.js"
+  },
+  "keywords": [],
+  "author": "Anderson Nascimento",
+  "license": "ISC",
+  "description": ""
+}
