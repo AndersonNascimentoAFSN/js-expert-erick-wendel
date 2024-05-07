@@ -1,0 +1,12 @@
+{
+  "name": "aula01-vscode-terminal-regex",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "Anderson Nascimento",
+  "license": "ISC",
+  "description": ""
+}
