@@ -1,0 +1,110 @@
+export const database = [
+  {
+    "id": "e4025512-e14a-4a8d-9f4e-b007a08c529a",
+    "age": 8,
+    "name": "Rowena Wallace",
+    "email": "rowena_wallace@rameon.sandvikcoromant",
+    "phone": "+55 (82) 33320-0930",
+    "address": "96 Lexington Avenue, Hilltop, Missouri",
+    "balance": "$2,346.17",
+    "company": "Rameon",
+    "createdAt": "2012-12-23T17:40:43.681Z",
+    "updatedAt": "2012-12-24T17:40:43.681Z"
+  },
+  {
+    "id": "a1b1c36a-8fb4-4d59-a254-5ac8259e2192",
+    "age": 5,
+    "name": "Olivia Sosa",
+    "email": "olivia_sosa@earthplex.dev",
+    "phone": "+55 (82) 33320-0930",
+    "address": "50 Throop Avenue, Sussex, Connecticut",
+    "balance": "$2,954.17",
+    "company": "Earthplex",
+    "createdAt": "2012-12-31T08:29:42.649Z",
+    "updatedAt": "2013-01-01T08:29:42.649Z"
+  },
+  {
+    "id": "cdf57d60-dbc5-46e7-8377-5f913656f447",
+    "age": 5,
+    "name": "Boyle Morris",
+    "email": "boyle_morris@neurocell.epson",
+    "phone": "+55 (82) 33320-0930",
+    "address": "7 Polhemus Place, Why, New Hampshire",
+    "balance": "$3,888.17",
+    "company": "Neurocell",
+    "createdAt": "2010-12-03T23:52:39.641Z",
+    "updatedAt": "2010-12-04T23:52:39.641Z"
+  },
+  {
+    "id": "012fc8da-7b02-4bf0-b37e-8b7f04c7b78b",
+    "age": 3,
+    "name": "Ross Middleton",
+    "email": "ross_middleton@duoflex.frl",
+    "phone": "+55 (82) 33320-0930",
+    "address": "77 Bushwick Avenue, Cressey, Wisconsin",
+    "balance": "$2,056.23",
+    "company": "Duoflex",
+    "createdAt": "2014-08-06T20:22:18.941Z",
+    "updatedAt": "2014-08-07T20:22:18.941Z"
+  },
+  {
+    "id": "2dc5edaa-a33f-4d84-9a59-b571385421d0",
+    "age": 0,
+    "name": "Carlene Macdonald",
+    "email": "carlene_macdonald@zounds.do",
+    "phone": "+55 (82) 33320-0930",
+    "address": "49 Kaufman Place, Mulino, Wyoming",
+    "balance": "$3,871.61",
+    "company": "Zounds",
+    "createdAt": "2010-08-08T04:25:04.865Z",
+    "updatedAt": "2010-08-09T04:25:04.865Z"
+  },
+  {
+    "id": "0e39df09-9255-418a-9bb6-0532f6aab0ee",
+    "age": 8,
+    "name": "Kathy Thompson",
+    "email": "kathy_thompson@ceprene.no",
+    "phone": "+55 (82) 33320-0930",
+    "address": "19 Bartlett Street, Cascades, California",
+    "balance": "$2,835.06",
+    "company": "Ceprene",
+    "createdAt": "2013-05-16T19:09:42.625Z",
+    "updatedAt": "2013-05-17T19:09:42.625Z"
+  },
+  {
+    "id": "3dd9fc00-6165-4ff1-928c-3b813a25c623",
+    "age": 6,
+    "name": "Glover Cantrell",
+    "email": "glover_cantrell@obliq.cash",
+    "phone": "+55 (82) 33320-0930",
+    "address": "90 Bogart Street, Fivepointville, Tennessee",
+    "balance": "$1,593.16",
+    "company": "Obliq",
+    "createdAt": "2013-07-05T22:46:31.392Z",
+    "updatedAt": "2013-07-06T22:46:31.392Z"
+  },
+  {
+    "id": "d691d9c0-c873-435e-a377-29a94f36d468",
+    "age": 9,
+    "name": "Joy Warner",
+    "email": "joy_warner@manufact.alsace",
+    "phone": "+55 (82) 33320-0930",
+    "address": "16 Vermont Street, Summerset, Alaska",
+    "balance": "$1,589.01",
+    "company": "Manufact",
+    "createdAt": "2014-08-15T03:49:20.573Z",
+    "updatedAt": "2014-08-16T03:49:20.573Z"
+  },
+  {
+    "id": "f7367b90-22c4-48aa-a09f-5fc0ab2ae0d0",
+    "age": 5,
+    "name": "Floyd Schneider",
+    "email": "floyd_schneider@tourmania.lk",
+    "phone": "+55 (82) 33320-0930",
+    "address": "33 Garland Court, Alden, Oklahoma",
+    "balance": "$1,082.89",
+    "company": "Tourmania",
+    "createdAt": "2012-01-06T08:36:58.337Z",
+    "updatedAt": "2012-01-07T08:36:58.337Z"
+  }
+]

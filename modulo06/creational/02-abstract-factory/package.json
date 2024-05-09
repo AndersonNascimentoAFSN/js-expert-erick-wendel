@@ -1,0 +1,20 @@
+{
+  "name": "02-abstract-factory",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "web": "npx http-server . -p 3000 -c-1",
+    "server": "node ui/index.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Anderson Nascimento",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "chalk-table": "^1.0.2",
+    "http-server": "^14.1.1"
+  }
+}
