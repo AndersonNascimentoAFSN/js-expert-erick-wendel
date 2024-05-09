@@ -1,0 +1,22 @@
+{
+  "name": "01-factory",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src",
+    "test": "npx mocha -w --parallel test/*.test.js",
+    "test:cov": "npx nyc npx mocha --parallel test/*.test.js"
+  },
+  "keywords": [],
+  "author": "Anderson Nascimento",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "chai": "^5.1.1",
+    "esm": "^3.2.25",
+    "mocha": "^10.4.0",
+    "nyc": "^15.1.0",
+    "sinon": "^17.0.2"
+  }
+}
