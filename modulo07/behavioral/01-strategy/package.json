@@ -1,0 +1,23 @@
+{
+  "name": "01-strategy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "npx nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Anderson Nascimento",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "dependencies": {
+    "knex": "^3.1.0",
+    "mongodb": "^6.6.1",
+    "pg": "^8.11.5",
+    "pg-pool": "^3.6.2"
+  }
+}
