@@ -12,6 +12,6 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@andersonnascimentoafsn/fluentsql": "^2.0.0"
+    "@andersonnascimentoafsn/fluentsql": ">1.0.0 <2.0.1"
   }
 }
