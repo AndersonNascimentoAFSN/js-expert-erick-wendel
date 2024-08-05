@@ -1,0 +1,14 @@
+{
+  "name": "01-repl",
+  "version": "1.0.0",
+  "main": "index.mjs",
+  "type": "module",
+  "scripts": {
+    "start": "node index.mjs",
+    "inspect": "node inspect index.mjs"
+  },
+  "keywords": [],
+  "author": "Anderson Nascimento",
+  "license": "ISC",
+  "description": ""
+}
