@@ -7,10 +7,10 @@ import Util from './utils.js'
 const defaultDependencies = (layer, repositoryName, serviceName) => {
   const dependencies = {
     repository: [],
-    service: [`${repositoryName}Repository`],
+    service: [`${repositoryName}`],
     factory: [
-      `${repositoryName}Repository`,
-      `${serviceName}Service`,
+      `${repositoryName}`,
+      `${serviceName}`,
     ]
   }
 

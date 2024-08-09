@@ -23,8 +23,8 @@ describe('#Layers - Files Structure', () => {
     serviceName: 'heroes',
   }
 
-  const repositoryLayer = `${config.componentName}Repository`
-  const serviceLayer = `${config.componentName}Service`
+  const repositoryLayer = `${config.componentName}`
+  const serviceLayer = `${config.componentName}`
 
   beforeEach(() => {
     jest.clearAllMocks()

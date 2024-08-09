@@ -14,7 +14,7 @@ export default class ${componentNameAnchor}Repository {
     return Promise.reject(new Error('method not implemented!'));
   }
 
-  async delete(id, data) {
+  async update(id, data) {
     return Promise.reject(new Error('method not implemented!'));
   }
 

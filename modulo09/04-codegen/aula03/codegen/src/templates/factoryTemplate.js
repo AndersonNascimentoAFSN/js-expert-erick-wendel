@@ -4,8 +4,8 @@ const componentNameAnchor = `$$componentName`
 const repositoryNameAnchor = `$$repositoryName`
 const serviceNameAnchor = `$$serviceName`
 
-const repositoryNameDepAnchor = `$$depRepository`
-const serviceNameDepAnchor = `$$depService`
+const repositoryNameDepAnchor = `$$xxx`
+const serviceNameDepAnchor = `$$yyy`
 
 const template = `
 import ${repositoryNameAnchor}Repository from '../repository/${repositoryNameDepAnchor}Repository.js'
@@ -14,7 +14,7 @@ import ${serviceNameAnchor}Service from '../service/${serviceNameDepAnchor}Servi
 export default class ${componentNameAnchor}Factory {
     static getInstance() {
     const repository = new ${repositoryNameAnchor}Repository();
-    const service = new ${serviceNameAnchor}Service(repository);
+    const service = new ${serviceNameAnchor}Service({ repository });
     return service
   }
 }`
