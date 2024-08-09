@@ -1,0 +1,22 @@
+{
+  "name": "@andersonnascimentoafsn/aula01",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "codegen": "./src/index.js"
+  },
+  "scripts": {
+    "start:dev": "NODE_ENV=dev node --experimental-json-modules src/index.js",
+    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest --runInBand --no-cache --watch --config jest.config.mjs",
+    "test:cov": "NODE_OPTIONS=--experimental-vm-modules npx jest --config jest.config.mjs --coverage "
+  },
+  "keywords": [],
+  "author": "Anderson Nascimento",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "jest": "^29.7.0",
+    "yargs": "^17.7.2"
+  }
+}
