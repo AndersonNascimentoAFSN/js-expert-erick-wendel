@@ -1,0 +1,25 @@
+{
+  "name": "@andersonnascimentoafsn/02-memleak-events",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "CLIMEM=8999 node --max-old-space-size=64 -r climem index.js",
+    "climem": "npx climem 8999",
+    "test": "npx autocannon -c -d 30 -p 10 http://localhost:3000",
+    "flame-0x": "npx 0x -- node index.js",
+    "clinic-doctor": "npx clinic doctor -- node index.js",
+    "clinic-flame": "npx clinic flame -- node index.js",
+    "clinic-heapprofiler": "npx clinic heapprofiler -- node index.js"
+  },
+  "keywords": [],
+  "author": "Anderson Nascimento",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "0x": "^5.7.0",
+    "autocannon": "^7.15.0",
+    "climem": "^2.0.0",
+    "clinic": "^13.0.0"
+  }
+}
