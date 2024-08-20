@@ -5,3 +5,5 @@ coverage/
 coverage/
 modulo08/01-my-first-npm-module/fluentsql
 modulo08/03-npm-registry/fluentsql
+mongodbdata/
+repo_metadata.json
