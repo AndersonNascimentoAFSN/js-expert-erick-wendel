@@ -1,0 +1,17 @@
+{
+  "name": "@andersonnascimentoafsn/03-cluster-nodejs",
+  "version": "1.0.0",
+  "main": "./src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ./src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Anderson Nascimento",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "autocannon": "^7.15.0"
+  }
+}
